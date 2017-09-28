@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 // Add routes, both API and view
-app.use(routes);
+
 
 // Serve up static assets (usually on heroku)
 // if (process.env.NODE_ENV === "production") {
@@ -21,7 +21,7 @@ app.use(routes);
 // }
 // Serve up static assets (usually on heroku)
 app.use(express.static("client/build"));
-
+app.use(routes);
 
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
