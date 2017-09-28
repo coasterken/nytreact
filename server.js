@@ -16,9 +16,12 @@ app.use(bodyParser.json());
 app.use(routes);
 
 // Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static("client/build"));
+// }
+// Serve up static assets (usually on heroku)
+app.use(express.static("client/build"));
+
 
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
