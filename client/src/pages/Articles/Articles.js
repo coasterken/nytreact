@@ -92,27 +92,27 @@ class Articles extends Component {
               </div>
               <div className="panel-body">
                 <form>
-                  <label for="searchterm">Search Term:</label>
+                  <label htmlFor="searchterm">Search Term:</label>
                   <Input name="searchterm"
                          value={this.state.searchterm}
                          onChange={this.handleInputChange}
                          placeholder="Search Term" />
-                  <label for="numberofrecords">Number of Records:</label>
+                  <label htmlFor="numberofrecords">Number of Records:</label>
                   <select name="numberofrecords" 
                           value={this.state.numberofrecords}
                           onChange={this.handleInputChange}
                           className="form-control" 
                           id="num-records-select">
                     <option value="1">1</option>
-						      	<option value="5" selected>5</option>
+						      	<option value="5" >5</option>
                     <option value="10">10</option>
                   </select>
-                  <label for="startyear">Start Year (optional - must be 4 digit year):</label>
+                  <label htmlFor="startyear">Start Year (optional - must be 4 digit year):</label>
                   <Input name="startyear"
                          value={this.state.startyear}
                          onChange={this.handleInputChange} 
                          placeholder="Start Year" />
-                  <label for="endyear">End Year (optional - must be 4 digit year):</label>
+                  <label htmlFor="endyear">End Year (optional - must be 4 digit year):</label>
                   <Input name="endyear" 
                          value={this.state.endyear}
                          onChange={this.handleInputChange}
